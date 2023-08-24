@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block title %}Welcom{% endblock %} {% block
+container %}
+<div class="trans-container">
+  <div class="header">
+    <a href="/"><h1>FPTB Translate</h1></a>
+    <hr />
+  </div>
+
+  <div class="form">
+    <form method="POST" action="">
+
+    <div class="lang-cont">
+        <div class="source lang-item">
+            <!-- {{ form.source_language.label }} -->
+            {{ form.source_language (class="select-item")}}
+          </div>
+
+          <div class="target lang-item">
+            <!-- {{ form.target_language.label }} -->
+            {{ form.target_language (class="select-item")}}
+          </div>
+    </div>
+
+      {{ form.text }}<br>
+      {{ form.submit }}
+    </form>
+
+    <p class="target-lang">Translated Text: {{ translation }}</p>
+    {% if tran %}
+        <p class="target-lang">Translated Text: {{ tran }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}

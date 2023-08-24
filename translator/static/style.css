@@ -1,0 +1,146 @@
+body {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #13ca5f;
+  }
+img{
+    width: 400px;
+}
+p,textarea{
+    width: 45%;
+    resize: none;
+    height: 350px;
+    background-color: #d0d4d2bb;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    color: #969090;
+}
+a{
+  text-decoration: none;
+  color: #13ca5f;
+}
+.link{
+  background-color: #13ca5f;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+input[type="submit"]{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #13ca5f;
+  color: #fff;
+  font-weight: bold;
+}
+.target-lang{
+    position: absolute;
+    bottom: 49px;
+    left: 665px;
+}
+  .container {
+    border-radius: 20px;
+    width: 200vh;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #13ca5f;
+  }
+  
+  .item {
+    width: 100%;
+  }
+  
+  .item:nth-child(1) {
+    text-align: center;
+  }
+  
+  .trans-container{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: -20px;
+    height: 80vh;
+  }
+  .lang-cont{
+    display: flex;
+  }
+  .lang-item{
+    width: 100%;
+  }
+  .select-item{
+    border: none;
+    height: 50px;
+  }
+  /* Media Queries */
+  
+  /* Smartphones */
+  @media (max-width: 576px) {
+    body {
+        background-color: #fff;
+        margin: 0;
+        text-align: center;
+      }
+      img{
+        max-width: 200px;
+    }
+    .header1{
+      font-size: 1em;
+      text-align: right;
+      padding: 35px;
+    }
+    p,textarea{
+      width: 100%;
+      resize: none;
+      height: 250px;
+      background-color: #d0d4d2bb;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 5px;
+      color: #969090;
+  }
+    .container {
+      width: 120%;
+      margin-left: -50px;
+      display: block;
+      padding: 2px;
+      word-wrap: break-word;
+    }
+    .trans-container{
+        padding: -10px;
+      }
+    .target-lang{
+      position: relative;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* Laptops  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .container {
+      width: 60%;
+    }
+  }
+  
+  /* Desktops */
+  /* @media (min-width: 993px) {
+    .container {
+      width: 50%; 
+    }
+  }*/
